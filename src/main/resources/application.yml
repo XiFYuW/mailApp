@@ -1,0 +1,32 @@
+spring:
+  mail:
+    host: smtp.163.com
+    username: xif_yuw@163.com
+    password: ************
+    default-encoding: UTF-8
+mail:
+  from_address: xif_yuw@163.com
+  to_address: 1612893772@qq.com
+  subject: 服务重启
+  content: 新的域名
+  delay: 1800
+nat-app:
+  log: E:\natapp_windows_amd64_2_3_9\log.log
+  format: yyyy/MM/dd HH:mm:ss
+  pan: http://
+  perform_start: E:\natapp_windows_amd64_2_3_9\performStart.bat
+  perform_stop: E:\natapp_windows_amd64_2_3_9\performStop.bat
+heartbeat:
+  local: http://127.0.0.1:8001
+  initialDelay: 600
+  delay: 1800
+server:
+  port: 8080
+  servlet:
+    context-path: /
+logging:
+  level:
+    root: WARN
+  file:
+    name: mailApp.log
+    path: mailApp
